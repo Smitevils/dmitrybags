@@ -1,0 +1,35 @@
+@import 'variables';
+@import 'fonts';
+@import 'mixins';
+@import 'buttons';
+
+@import 'header';
+@import 'general';
+@import 'footer';
+
+
+//* {outline: 1px dashed yellowgreen}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.quantity {
+	min-width: 22px; height: 22px;
+	position: absolute;
+	top: -9px; left: -9px;
+	padding: 5px;
+	border-radius: 50%;
+	background-color: $bg-3;
+	color: $f-3;
+	text-align: center;
+	line-height: 11px;
+	@include OpenSansBold;
+	font-size: 12px;
+}
+
+@import 'adaptive';

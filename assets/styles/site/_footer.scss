@@ -1,0 +1,45 @@
+footer {
+	background-color: $bg-4;
+	padding: 20px 0;
+	//
+	p {
+		color: $f-4;
+		@include CocoGothicRegular;
+		font-size: 14px;
+		//
+		span {@include MyriadProRegular;}
+	}
+	a {
+		color: $f-4;
+		//
+		&:hover {color: $f-4;}
+		&:active {color: $f-4;}
+		&:visited {color: $f-4;}
+		&:link {color: $f-4;}
+	}
+	p.adress {
+		text-align: left;
+	}
+	p.graph {
+		text-align: center;
+	}
+	p.phone {
+		text-align: right;
+	}
+}
+
+.footer_social-links-container {
+	float: right;
+	padding: 22px 0;
+	//
+	ul {
+		display: inline-block; list-style: none; padding-left: 0; font-size: 0;
+		//
+		li {
+			display: inline-block; margin: 0 5px;
+			//
+			a {opacity: 0.7; @include translate_0-6s;}
+			a:hover {opacity: 1;}
+		}
+	}
+}

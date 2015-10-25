@@ -1,0 +1,18 @@
+@import 'variables';
+@import 'fonts';
+@import 'mixins';
+
+@import 'general';
+
+
+//* {outline: 1px dashed yellowgreen}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+@import 'adaptive';
