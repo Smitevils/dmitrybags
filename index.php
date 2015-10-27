@@ -37,7 +37,7 @@
 			<div class="main__menu-wrap">
 				<div class="main__menu">
 					<ul>
-						<li><a href="#">Каталог</a></li>
+						<li><a href="main.php">Каталог</a></li>
 						<li><a href="#">О компании</a></li>
 						<li><a href="#">Отзывы</a></li>
 						<li><a href="#">Контакты</a></li>

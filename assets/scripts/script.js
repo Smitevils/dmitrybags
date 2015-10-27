@@ -34,4 +34,62 @@ $(document).ready(function() {
 			adaptiveHeight: true
 		});
 	}
+	/* Запускаем слайдер по брендам */
+	if ( $('div').is('#main-brands-slider') ) {
+		$('#main-brands-slider').slick({
+			dots: false,
+			arrows: true,
+			infinite: true,
+			speed: 100,
+			slidesToShow: 5,
+			//prevArrow: '.slider-main__slide-prev',
+			//nextArrow: '.slider-control.next',
+			adaptiveHeight: true,
+			responsive: [
+				{
+					breakpoint: 1400,
+					settings: {
+					dots: false,
+					arrows: true,
+					infinite: true,
+					speed: 100,
+					slidesToShow: 3
+					}
+				},
+				{
+					breakpoint: 1000,
+					settings: {
+					dots: false,
+					arrows: true,
+					infinite: true,
+					speed: 100,
+					slidesToShow: 1
+					}
+				}
+			]
+		});
+	}
+	/* like */
+	$('.main__catalog__item-block__like').on('click', function(event) {
+		event.preventDefault();
+		$(this).addClass('active');
+		$(this).removeClass('animation-pop');
+		$(this).hide();
+		$(this).addClass('animation-pop');
+		$(this).show();
+		//
+		$('.header__liked-btn').find('.quantity').removeClass('animation-pop');
+		$('.header__liked-btn').find('.quantity').hide();
+		$('.header__liked-btn').find('.quantity').addClass('animation-pop');
+		$('.header__liked-btn').find('.quantity').show();
+	});
+	/* pull in basket */
+	$('.catalog__btn_1').on('click', function(event) {
+		event.preventDefault();
+		$(this).addClass('active');
+		$('.header__basket-btn').find('.quantity').removeClass('animation-pop');
+		$('.header__basket-btn').find('.quantity').hide();
+		$('.header__basket-btn').find('.quantity').addClass('animation-pop');
+		$('.header__basket-btn').find('.quantity').show();
+	});
 });
