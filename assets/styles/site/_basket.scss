@@ -1,0 +1,224 @@
+.basket-page {
+	padding: 10px 0;
+}
+.basket__steps-container {
+	text-align: left;
+}
+.basket__step {
+	padding: 0;
+	//
+	a {
+		@include CocoGothicHeavy;
+		font-size: 24px;
+		color: $f-11;
+		line-height: 42px;
+		text-transform: uppercase;
+		//
+		&:before {
+			font-family: "Arial Black"; font-size: 18px; text-align: center;
+			content: "1";
+			display: inline-block;
+			width: 42px; height: 42px; line-height: 38px;
+			background-color: transparent;
+			color: $bg-3;
+			border-radius: 50%;
+			margin-right: 10px;
+			border: 2px solid $bg-3;
+		}
+	}
+	a:active, a:visited, a:link {text-decoration: none;}
+}
+.basket__step a.active {
+	color: $f-10;
+}
+.basket__step a.active:before {
+	background-color: $bg-3;
+	color: white;
+}
+.basket__step:nth-of-type(1) a:before {content: "1";}
+.basket__step:nth-of-type(2) a:before {content: "2";}
+.basket__step:nth-of-type(3) a:before {content: "3";}
+
+.basket__content {padding: 30px 0;}
+
+.basket__step-content {}
+
+.basket__step-1-content {
+	//min-height: 300px;
+	display: none;
+}
+.basket__step-2-content {
+	display: none;
+	p {
+		@include OpenSansBold;
+		font-size: 14px;
+		color: $f-10;
+		text-transform: uppercase;
+	}
+	input,textarea {
+		@include translate_0-6s;
+		background-color: $bg-7;
+		padding: 12px 28px;
+		@include OpenSansRegular;
+		font-size: 14px;
+		color: $f-10;
+		border: none;
+		outline: none;
+		width: 100%;
+		resize: none;
+	}
+	input.alert {
+		border: 2px solid #9b0000;
+	}
+	input.good {
+		border: 2px solid #009c4d;
+	}
+	.input-1 {width: 100%;}
+}
+.basket__step-3-content {
+	display: none;
+	h4 {
+		text-transform: uppercase;
+		font-size: 18px;
+		color: $f-10;
+		@include CocoGothicHeavy;
+	}
+	input {display: none;}
+	label {
+		display: inline-block; 
+		width: 30px; height: 30px;
+		background: url(../../img/icons/checkbox-uncheck.png);
+		background-size: contain;
+		cursor: pointer;
+		float: left;
+	}
+	input:checked + label {
+		background: url(../../img/icons/checkbox-check.png);
+		background-size: contain;
+	}
+	span {
+		@include OpenSansBold;
+		color: $f-10;
+		font-size: 22px;
+		padding-left: 20px;
+	}
+	p {
+		padding-left: 54px;
+	}
+}
+
+//checkbox-check.png
+//checkbox-uncheck.png
+
+.basket__step-1-content.active, .basket__step-2-content.active, .basket__step-3-content.active {
+	display: block;
+}
+
+.basket__result {
+	padding-bottom: 30px;
+	//
+	ul {
+		padding-left: 0; margin: 0; display: inline-block; float: right;
+		//
+		li {
+			display: inline-block; padding: 0 10px;
+			//
+			h2 {
+				@include CocoGothicHeavy;
+				font-size: 24px;
+				color: $f-10;
+				text-transform: uppercase;
+			}
+			h2.cost {
+				@include OpenSansBold;
+				font-size: 30px;
+				font-weight: 800;
+				padding-left: 40px;
+			}
+		}
+	}
+}
+
+table.basket-table {
+	width: 100%;
+	th {
+		@include OpenSansRegular;
+		font-size: 14px;
+		text-align: left;
+		color: #a3a3a4;
+		border-bottom: 1px solid #a3a3a4;
+		text-transform: uppercase;
+	}
+	th:nth-of-type(1) {width: 15%;}
+	th:nth-of-type(2) {width: 30%;}
+	th:nth-of-type(3) {width: 15%;}
+	th:nth-of-type(4) {width: 20%;}
+	th:nth-of-type(5) {width: 15%;}
+	th:nth-of-type(6) {width: 15%;}
+	tr:nth-of-type(1) {height: 40px;}
+	tr {height: 200px;}
+	td {vertical-align: middle; border-bottom: 1px solid #a3a3a4;}
+	td:nth-of-type(1) {
+		//
+		img {width: 80%; height: auto;}
+	}
+	td:nth-of-type(2) {
+		@include CocoGothicHeavy;
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	td:nth-of-type(3) {
+		@include OpenSansBold;
+		font-size: 30px; text-align: center;
+	}
+	td:nth-of-type(4) {text-align: center;}
+	td:nth-of-type(5) {
+		@include OpenSansBold;
+		font-size: 30px; text-align: center;
+	}
+	td:nth-of-type(6) {text-align: right;}
+}
+
+.basket-counter-wrap {
+	display: inline-block; font-size: 0;
+	border: 2px solid #2a2a2d;
+	border-radius: 4px;
+	@include OpenSansBold;
+	color: #2a2a2d;
+}
+.basket-counter {
+	display: inline-block;
+	padding: 0 14px;
+	font-size: 18px;
+	border-right: 2px solid #2a2a2d;
+	border-left: 2px solid #2a2a2d;
+}
+.basket-counter-minus {
+	display: inline-block;
+	padding: 0 14px;
+	font-size: 18px;
+	cursor: pointer;
+	//
+	&:hover {
+		background-color: #2a2a2d;
+		color: white;
+	}
+}
+.basket-counter-plus {
+	display: inline-block;
+	padding: 0 14px;
+	font-size: 18px;
+	cursor: pointer;
+	//
+	&:hover {
+		background-color: #2a2a2d;
+		color: white;
+	}
+}
+.basket-delite {
+	display: inline-block;
+	width: 30px; height: 30px;
+	background: url(../../img/icons/chrest.png) no-repeat center;
+	cursor: pointer;
+}
+

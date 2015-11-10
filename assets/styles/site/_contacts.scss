@@ -1,0 +1,31 @@
+.contacts-container {
+	padding: 40px 0 60px 0;
+	color: $f-10;
+}
+
+.map-container {
+	width: 50%; height: 680px; float: left; overflow: hidden;
+}
+
+.contacts-container__text {
+	width: 50%;
+	padding-left: 50px;
+	float: left;
+	//
+	h1 {
+		@include CocoGothicHeavy;
+		font-size: 48px;
+		text-transform: uppercase;
+		margin-top: 0;
+	}
+	p {
+		@include OpenSansRegular;
+		font-size: 24px;
+		span { @include OpenSansBold; }
+	}
+	h3 {
+		@include OpenSansBold;
+		font-size: 30px;
+		margin-top: 0;
+	}
+}

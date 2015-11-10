@@ -69,3 +69,194 @@
 		color: white;
 	}
 }
+
+.card-in-basket-btn {
+	display: inline-block;
+	padding: 22px 54px;
+	background-color: transparent;
+	color: $bg-6;
+	border: 2px solid $bg-6;
+	border-radius: 4px;
+	@include OpenSansBold;
+	font-size: 16px;
+	text-transform: uppercase;
+	cursor: pointer;
+	@include userSelectNone;
+	margin: 0 auto;
+	overflow: hidden;
+	@include translate_0-6s;
+	vertical-align: middle;
+	//
+	// &:hover {
+	// 	background-color: $bg-6;
+	// 	color: white;
+	// }
+	&.active {
+		background-color: $bg-6;
+		color: white;
+	}
+}
+
+.card-like {
+	display: inline-block;
+	padding: 22px 10px 22px 54px;
+	background-color: transparent;
+	color: $bg-6;
+	border: 2px solid transparent;
+	border-radius: 4px;
+	text-transform: uppercase;
+	cursor: pointer;
+	@include userSelectNone;
+	margin: 0 auto;
+	overflow: hidden;
+	@include translate_0-6s;
+	vertical-align: middle;
+	background: url(../../img/icons/like.png) no-repeat center left;
+	//
+	@include OpenSansBold;
+	font-size: 14px;
+	//
+	// &:hover {
+	// 	background: url(../../img/icons/like-hover.png) no-repeat center left;
+	// }
+	&.active {
+		background: url(../../img/icons/like-hover.png) no-repeat center left;
+	}
+}
+
+.basket-next-step {
+	display: inline-block;
+	padding: 14px 52px 14px 40px;
+	margin: 10px 0;
+	background-color: $bg-3;
+	color: $bg-3;
+	border: 2px solid $bg-3;
+	border-radius: 4px;
+	text-transform: uppercase;
+	cursor: pointer;
+	@include userSelectNone;
+	overflow: hidden;
+	@include translate_0-6s;
+	vertical-align: middle;
+	background: url(../../img/icons/arrow-pink.png) no-repeat center right;
+	@include OpenSansBold;
+	font-size: 18px;
+	float: right;
+	clear: right;
+	//
+	&:hover {
+		background-image: none;
+		background: url(../../img/icons/arrow-white.png) no-repeat center right;
+		background-color: $bg-3;
+		color: white;
+	}
+}
+
+.basket-finish-step {
+	display: inline-block;
+	padding: 14px 52px 14px 40px;
+	margin: 10px 0;
+	background-color: $bg-3;
+	color: $bg-3;
+	border: 2px solid $bg-3;
+	border-radius: 4px;
+	text-transform: uppercase;
+	cursor: pointer;
+	@include userSelectNone;
+	overflow: hidden;
+	@include translate_0-6s;
+	vertical-align: middle;
+	background: url(../../img/icons/arrow-pink.png) no-repeat center right;
+	@include OpenSansBold;
+	font-size: 18px;
+	float: right;
+	clear: right;
+	display: none;
+	//
+	&:hover {
+		background-image: none;
+		background: url(../../img/icons/arrow-white.png) no-repeat center right;
+		background-color: $bg-3;
+		color: white;
+	}
+}
+
+.send-riviews-btn {
+	display: inline-block;
+	background-color: $f-10;
+	border: 2px solid $f-10;
+	padding: 14px 28px;
+	border-radius: 5px;
+	color: white;
+	@include OpenSansBold;
+	@include translate_0-6s;
+	font-size: 12px;
+	cursor: pointer;
+	@include userSelectNone;
+	margin: 20px 0;
+	//
+	&:hover {
+		background-color: white;
+		border: 2px solid $f-10;
+		color: $f-10;
+	}
+}
+
+.add-cheched-btn {
+	display: inline-block;
+	background-color: white;
+	border: 2px solid $f-10;
+	padding: 10px 12px;
+	border-radius: 5px;
+	color: $f-10;
+	@include OpenSansBold;
+	@include translate_0-6s;
+	font-size: 12px;
+	cursor: pointer;
+	@include userSelectNone;
+	margin: 20px 0;
+	text-transform: uppercase;
+	margin-left: 20px;
+	vertical-align: middle;
+	//
+	&:hover {
+		background-color: $f-10;
+		border: 2px solid $f-10;
+		color: white;
+	}
+}
+
+.add-favorites-btn {
+	display: inline-block;
+	background-color: white;
+	border: 2px solid $br-3;
+	padding: 16px 32px;
+	padding-right: 56px;
+	border-radius: 5px;
+	color: $br-3;
+	@include OpenSansBold;
+	@include translate_0-6s;
+	font-size: 18px;
+	cursor: pointer;
+	@include userSelectNone;
+	margin: 20px 0;
+	text-transform: uppercase;
+	margin-left: 20px;
+	vertical-align: middle;
+	background: url(../../img/icons/arrow-pink.png) no-repeat center right;
+	//
+	&:hover {
+		border: 2px solid $br-3;
+		color: white;
+		background: url(../../img/icons/arrow-white.png) no-repeat center right;
+		background-color: $br-3;
+	}
+}
+
+.favorites-delite-btn {
+	display: inline-block;
+	width: 20px; height: 20px;
+	background: url(../../img/icons/chrest.png) no-repeat center right;
+	background-size: contain;
+	cursor: pointer;
+}

@@ -1,0 +1,105 @@
+.comments-wrap {
+	padding: 40px 0 60px 0;
+	color: $f-10;
+}
+.comments-title {
+	@include CocoGothicHeavy;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+.show-comments-block {
+	width: 70%; float: left; padding-right: 40px;
+}
+.add-comment-block {
+	width: 30%; float: left;
+}
+.comments-container {
+
+}
+.comment-box {
+	padding-top: 20px
+}
+
+.comment-photo-block {
+	width: 14%; float: left;
+}
+.comment-photo {
+	text-align: center;
+	img {width: 50%; height: auto; border-radius: 50%;}
+}
+.comment-name {
+	h6 {
+		@include CocoGothicHeavy; font-size: 14px;
+		text-transform: uppercase;
+		margin: 6px 0; text-align: center;
+	}
+}
+.comment-text-block {
+	width: 86%; float: left;
+}
+
+.comment-text {
+	background-color: pink;
+	border-radius: 5px;
+	padding: 16px 36px;
+	display: inline-block;
+	position: relative;
+	//
+	p {
+		@include OpenSansRegular;
+		font-size: 18px; margin: 0;
+	}
+	//
+	&:before {
+		content: "";
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 11px 12px 11px 0;
+		border-color: transparent pink transparent transparent;
+		position: absolute; top: 12px; left: -10px;
+	}
+}
+
+.comment-box:nth-of-type(2n+1) .comment-text {
+	background-color: #d1eefa;
+	&:before {
+		border-color: transparent #d1eefa transparent transparent;
+	}
+}
+.comment-box:nth-of-type(2n) .comment-text {
+	background-color: #f3cddd;
+	&:before {
+		border-color: transparent #f3cddd transparent transparent;
+	}
+}
+
+.comment-date {
+	//
+	p {
+		text-align: right;
+		@include OpenSansRegular;
+		font-size: 14px;
+	}
+}
+
+.add-comment-container {
+	h4 {
+		@include OpenSansBold;
+		font-size: 14px;
+		text-transform: uppercase;
+		padding: 10px 0;
+	}
+	input,textarea {
+		@include translate_0-6s;
+		background-color: $bg-7;
+		padding: 12px 28px;
+		@include OpenSansRegular;
+		font-size: 14px;
+		color: $f-10;
+		border: none;
+		outline: none;
+		width: 100%;
+		resize: none;
+	}
+}

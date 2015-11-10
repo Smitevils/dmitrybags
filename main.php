@@ -10,56 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="assets/modules/slickSlider/slick.css">
 </head>
 <body>
-	<div class="header__wrap">
-		<div class="page-container">
-			<header>
-				<div class="header__logo">
-					<a href="#">
-						<img src="assets/img/logos/logo-black.png" class="header-logo" alt="logo">
-					</a>
-				</div>
-				<div class="header__menu animated">
-					<ul>
-						<li class="hamburger-logo">
-							<a href="#">
-								<img src="assets/img/logos/logo-black.png" alt="logo">
-							</a>
-						</li>
-						<li>
-							<a href="#" class="active">Каталог</a>
-						</li>
-						<li>
-							<a href="#">О компании</a>
-						</li>
-						<li>
-							<a href="#">Отзывы</a>
-						</li>
-						<li>
-							<a href="#">Контакты</a>
-						</li>
-					</ul>
-				</div>
-				<div class="header__buttons">
-					<div class="header__liked-container">
-						<div class="header__liked-btn">
-							<div class="quantity">5</div>
-						</div>
-					</div>
-					<div class="header__search-container">
-						<div class="header__search-btn"></div>
-					</div>
-					<div class="header__basket-container">
-						<div class="header__basket-btn">
-							<i></i>
-							<span>корзина</span>
-							<div class="quantity">5</div>
-						</div>
-					</div>
-				</div>
-				<div class="hamburger"></div>
-			</header>
-		</div>
-	</div>
+	<?php include "search.php" ?>
+	<?php include "header.php" ?>
 	<main>
 		<div class="page-container clearfix">
 			<!-- slider -->
@@ -195,7 +147,7 @@
 						<!-- /hit -->
 						<div class="main__catalog__item-block__title">
 							<!-- Ссылка на карточку товара -->
-							<a href="#">
+							<a href="card.php">
 								<h4>
 									сумка мужская michael cors
 								</h4>
@@ -204,7 +156,7 @@
 						</div>
 						<div class="main__catalog__item-block__img-container">
 							<!-- Ссылка на карточку товара -->
-							<a href="#">
+							<a href="card.php">
 								<img src="assets/img/goods/item-1.jpg" alt="">
 							</a>
 							<!-- /Ссылка на карточку товара -->
@@ -229,7 +181,7 @@
 						<!-- /new -->
 						<div class="main__catalog__item-block__title">
 							<!-- Ссылка на карточку товара -->
-							<a href="#">
+							<a href="card.php">
 								<h4>
 									сумка мужская michael cors
 								</h4>
@@ -238,7 +190,7 @@
 						</div>
 						<div class="main__catalog__item-block__img-container">
 							<!-- Ссылка на карточку товара -->
-							<a href="#">
+							<a href="card.php">
 								<img src="assets/img/goods/item-2.jpg" alt="">
 							</a>
 							<!-- /Ссылка на карточку товара -->
@@ -358,60 +310,7 @@
 		</div>
 		<!-- /main catalog -->
 	</main>
-	<footer>
-		<div class="page-container">
-			<!-- кнопка и соц сети -->
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="footer__btn_1">
-						добавиться в группу вконтакте
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="footer_social-links-container">
-						<ul>
-							<li>
-								<a href="#">
-									<img src="assets/img/icons/fb.png" alt="facebook">
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="assets/img/icons/vk.png" alt="vkontakte">
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="assets/img/icons/tw.png" alt="twitter">
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<!-- /кнопка и соц сети -->
-			<!-- адрес, график, телефон -->
-			<div class="row">
-				<div class="col-md-12 col-lg-5">
-					<p class="adress">
-						Мы находимся по адресу: ул. Красных тюленей д. <span>32</span>
-					</p>
-				</div>
-				<div class="col-md-12 col-lg-5">
-					<p class="graph">
-						График работы: пн-пт: c <span>10:00</span> до <span>21:00</span>, сб. вс. - выходной
-					</p>
-				</div>
-				<div class="col-md-12 col-lg-2">
-					<p class="phone">
-						<span>
-							<a href="tel:8 (800) 455 44 31">8 (800) 455 44 31</a>
-						</span>
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<?php include "footer.php" ?>
 	<!-- Скрипты -->
 	<!-- JQ -->
 	<script src="assets/scripts/jquery-2.1.4.min.js"></script>

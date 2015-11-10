@@ -1,0 +1,39 @@
+.company-page {
+	padding: 40px 0 60px 0;
+}
+
+.company-page__column {width: 50%; float: left;}
+
+.company-page__photo-block {
+	width: 100%; height: 736px;
+	background: url(../../img/other/company.png) no-repeat center top;
+	background-size: contain;
+	//
+	h1 {
+		@include CocoGothicHeavy;
+		font-size: 72px;
+		color: white; margin: 0;
+		text-transform: uppercase;
+		padding: 250px 114px;
+	}
+}
+
+.company-page__text-block {
+	padding-left: 40px;  padding-right: 40px;
+	//
+	h1 {
+		@include CocoGothicHeavy;
+		text-transform: uppercase;
+		font-size: 48px;
+		margin-top: 0;
+	}
+	p {
+		span {
+			@include OpenSansBold;
+			font-size: 24px;
+		}
+		//
+		@include OpenSansRegular;
+		font-size: 14px;
+	}
+}

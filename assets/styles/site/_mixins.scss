@@ -1,3 +1,8 @@
+@mixin translate_1s {
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
 @mixin translate_0-6s {
 	-webkit-transition: all 0.6s;
 	-o-transition: all 0.6s;
